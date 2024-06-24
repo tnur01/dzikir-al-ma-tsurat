@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f0f0f0; /* Warna latar belakang yang lembut untuk kenyamanan mata */
+    margin: 0;
+    padding: 20px; /* Memberikan padding pada body untuk jarak dengan border box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.border-box {
+    border: 2px solid #4A90E2; /* Warna biru yang lembut */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.header {
+    background: linear-gradient(45deg, #1E90FF, #00BFFF); /* Gradasi biru */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.content {
+    text-align: center;
+}
+
+.button-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #FF6347, #FF4500); /* Gradasi merah */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #FF4500, #FF6347); /* Warna berubah saat dihover */
+    transform: translateY(-5px);
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .border-box {
+        margin: 0;
+        padding: 10px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .button-section {
+        margin: 10px 0;
+    }
+
+    .button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .border-box {
+        margin: 0;
+        padding: 10px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .header {
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
