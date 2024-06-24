@@ -30,6 +30,26 @@
     margin-top: 5px;
     color: #555;
   }
+
+  .download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #FF6347, #FF4500); /* Gradasi merah */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .download-btn:hover {
+    background: linear-gradient(45deg, #FF4500, #FF6347); /* Warna berubah saat dihover */
+    transform: translateY(-5px);
+  }
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .border-box {
@@ -50,6 +70,10 @@
 
     .footer {
         font-size: 14px;
+    }
+    .download-btn {
+      padding: 12px 25px;
+      font-size: 16px;
     }
 }
 
@@ -76,6 +100,10 @@
 
     .footer {
         font-size: 12px;
+    }
+    .download-btn {
+      padding: 10px 20px;
+      font-size: 14px;
     }
 }
 
@@ -412,7 +440,9 @@
     </div>
 </div>
 
-<!-- Continue with dzikir ke-3, ke-4, and so on -->
+<a href="dzikir_petang.pdf" download='Dzikir Petang' class="download-btn">Download PDF
+    <i class="fa fa-download"></i>
+</a>
 
 </body>
 </html>
