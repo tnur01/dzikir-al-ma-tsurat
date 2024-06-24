@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Dzikir Pagi</title>
+<title>Dzikir Petang</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -31,7 +29,8 @@
     font-size: 16px;
     margin-top: 5px;
     color: #555;
-}
+  }
+
   .download-btn {
     display: inline-block;
     padding: 15px 30px;
@@ -51,45 +50,63 @@
     background: linear-gradient(45deg, #FF4500, #FF6347); /* Warna berubah saat dihover */
     transform: translateY(-5px);
   }
-  /* Responsive Design */
-  @media screen and (max-width: 768px) {
-    body {
-      padding: 10px px; /* Padding 10px atas/bawah, 15px kiri/kanan di mode tablet */
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .border-box {
+        margin: 0;
+        padding: 10px;
+        border-radius: 0;
+        box-shadow: none;
     }
-    h1 {
-      font-size: 24px;
+
+    .button-section {
+        margin: 10px 0;
     }
-    .arabic {
-      font-size: 18px;
-      margin-bottom: 8px;
+
+    .button {
+        padding: 12px 24px;
+        font-size: 16px;
     }
-    .translation {
-      font-size: 14px;
+
+    .footer {
+        font-size: 14px;
     }
     .download-btn {
       padding: 12px 25px;
       font-size: 16px;
     }
-  }
-  @media screen and (max-width: 480px) {
-    body {
-      padding: 10px 20px; /* Padding 10px atas/bawah, 5px kiri/kanan di layar ponsel */
+}
+
+@media screen and (max-width: 480px) {
+    .border-box {
+        margin: 0;
+        padding: 10px;
+        border-radius: 0;
+        box-shadow: none;
     }
-    h1 {
-      font-size: 20px;
+
+    .header {
+        margin-bottom: 10px;
     }
-    .arabic {
-      font-size: 16px;
-      margin-bottom: 6px;
+
+    .title {
+        font-size: 20px;
     }
-    .translation {
-      font-size: 12px;
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 12px;
     }
     .download-btn {
       padding: 10px 20px;
       font-size: 14px;
     }
-  }
+}
+
 </style>
 </head>
 <body>
